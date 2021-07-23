@@ -5,14 +5,14 @@
     
 
     <div class="container my-3">
-        <h2>Your Todos</h2>
+        <h2>Add a Goal</h2>
         <form action="/" method="POST">
             <div class="mb-3">
-              <label for="title" class="form-label">Todo Title</label>
+              <label for="title" class="form-label">Goal Title</label>
               <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="desc" class="form-label">Todo Description</label>
+              <label for="desc" class="form-label">Goal Description</label>
               <input type="text" class="form-control" name="desc" id="desc">
             </div>
             
@@ -21,11 +21,11 @@
     </div>
 
     <div class="container my-3" >
-        <h2>Add a Todo</h2>
+        <h2>Goals List</h2>
         
                 {% if allTodo|length==0 %}
                 <div class="alert alert-warning" role="alert">
-                    All Todos accomplished. Create Todos to view more.
+                    All goals accomplished. Create goals to view more.
                 </div>   
                 {% else %}
                 <table class="table">
